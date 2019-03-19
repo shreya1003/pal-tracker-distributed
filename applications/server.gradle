@@ -11,7 +11,8 @@ dependencies {
     compile "mysql:mysql-connector-java:$mysqlVersion"
     compile "ch.qos.logback:logback-classic:$logbackVersion"
     compile "org.springframework.boot:spring-boot-starter-actuator"
-    compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
+    //compile "io.pivotal.spring.cloud:spring-cloud-services-starter-service-registry"
+    compile group: 'io.pivotal.spring.cloud', name: 'spring-cloud-services-starter-service-registry', version: '2.0.3.RELEASE'
 
     testCompile project(":components:test-support")
 }

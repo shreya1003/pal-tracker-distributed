@@ -17,7 +17,7 @@ buildscript {
         jsonPathVersion = "2.4.0"
         springCloudVersion = "Finchley.SR3"
         springCloudServicesClientLibrariesVersion = "2.0.2.RELEASE"
-        springCommonCloudVersion = "2.0.3.RELEASE"
+
     }
 
     repositories {
@@ -49,6 +49,9 @@ subprojects {
         compile "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
         compile "com.fasterxml.jackson.core:jackson-annotations:$jacksonVersion"
         compile "org.slf4j:slf4j-api:$slf4jVersion"
+        // https://mvnrepository.com/artifact/org.springframework/spring-context
+        //compile group: 'org.springframework', name: 'spring-context', version: '3.0.2.RELEASE'
+
 
         testCompile "junit:junit:$junitVersion"
         testCompile "org.mockito:mockito-core:$mockitoVersion"
